@@ -125,6 +125,12 @@
   .about-item{
     width: 100% !important;
   }
+  .res-logo{
+    width: 50%;
+  }
+  .res-img{
+    width: 25% !important;
+  }
 }
 /*** Topbar End ***/
 
@@ -1018,5 +1024,13 @@
   }
   #service-admin-bus {
     margin-top: 0rem;
+  }
+}
+@media (max-width:425px) {
+  .res-img{
+    width: 40% !important;
+  }
+  .res-logo{
+    width: 50%;
   }
 }
