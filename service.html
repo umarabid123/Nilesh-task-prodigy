@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>The Clarify - Management Consulting</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Topbar Start -->
+  <div class="container-fluid topbar px-0 d-none d-lg-block">
+    <div class="container px-0">
+      <div class="row gx-0 align-items-center" style="height: 45px">
+        <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+971 52 52
+              80086</a>
+            <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Support@clarify.ae</a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <div class="d-flex align-items-center justify-content-end">
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-facebook-f text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-twitter text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
+                class="fab fa-instagram text-white"></i></a>
+            <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i
+                class="fab fa-linkedin-in text-white"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar & Hero Start -->
+  <div class="container-fluid sticky-top px-0">
+    <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%"></div>
+    <div class="container px-0">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="img/Clarify-logo-1-cropped.png" alt="Logo" style="width: 15%" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">Bio</a>
+            <a href="service.html" class="nav-item nav-link active">Services</a>
+          </div>
+          <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+            <button class="btn btn-primary btn-md-square mx-2" data-bs-toggle="modal" data-bs-target="#searchModal">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- Navbar & Hero End -->
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h4 class="modal-title mb-0" id="exampleModalLabel">
+            Search by keyword
+          </h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1" />
+            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+  <!-- Header Start -->
+  <div class="container-fluid bg-breadcrumb">
+    <div class="bg-breadcrumb-single"></div>
+    <div class="container text-center py-5" style="max-width: 900px">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">
+        Our Services
+      </h4>
+      <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active text-primary">Service</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Header End -->
+
+  <!-- Services Start -->
+  <div class="container-fluid service py-5">
+    <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px">
+        <h4 class="text-primary">Our Services</h4>
+        <h1 class="display-4">
+          Offering the Best Clarify Consulting & Services
+        </h1>
+      </div>
+      <div class="row g-4 justify-content-center text-center">
+        <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item bg-light rounded">
+            <div class="service-img">
+              <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="" />
+            </div>
+            <div class="service-content text-center p-3">
+              <div class="service-content-inner">
+                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-business-time fa-2x me-2"></i>
+                  Government
+                  Relations and Employee PRO Services</a>
+                <p class="mb-4">
+                  Clarify Consulting provides expert professional services in
+                  government relations and employee & staff PRO (Public
+                  Relations Officer) services. Our goal is to ensure your
+                  business remains compliant and efficient, allowing you to
+                  focus on growth.
+                </p>
+                <a class="btn btn-light rounded-pill py-2 px-4" href="#service-gov-emp">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item bg-light rounded">
+            <div class="service-img">
+              <img src="img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="" />
+            </div>
+            <div class="service-content text-center p-3">
+              <div class="service-content-inner">
+                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-business-time fa-2x me-2"></i> PRO
+                  Corporate and Family Visa Services</a>
+                <p class="mb-4">
+                  Clarify Consulting offers specialized PRO (Public Relations
+                  Officer) services for corporate and family visa needs. We
+                  handle all the complexities of visa processing, ensuring a
+                  smooth and efficient experience for businesses and families
+                  alike.
+                </p>
+                <a class="btn btn-light rounded-pill py-2 px-4" href="#service-corp-fam">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="service-item bg-light rounded">
+            <div class="service-img">
+              <img src="img/service-4.jpg" class="img-fluid w-100 rounded-top" alt="" />
+            </div>
+            <div class="service-content text-center p-3">
+              <div class="service-content-inner">
+                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-business-time fa-2x me-2"></i>
+                  Administrative Support and Business Setup Services</a>
+                <p class="mb-4">
+                  Clarify Consulting specializes in providing comprehensive
+                  administrative support and business setup services. Our team
+                  ensures that your business operations run smoothly from the
+                  start, allowing you to focus on your core activities.
+                </p>
+                <a class="btn btn-light rounded-pill py-2 px-4" href="#service-admin-bus">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item bg-light rounded">
+            <div class="service-img">
+              <img src="img/service-5.jpg" class="img-fluid w-100 rounded-top" alt="" />
+            </div>
+            <div class="service-content text-center p-3">
+              <div class="service-content-inner">
+                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-business-time fa-2x me-2"></i>
+                  Trusted Local Sponsor & Agent Services in the UAE
+                </a>
+                <p class="mb-4">
+                  At Clarify Management Representative, we understand that navigating UAE's legal landscape can be
+                  challenging for foreign investors. That's why we offer reliable and highly trusted local sponsor
+                  services to help you establish a strong presence in the UAE.
+                  Our Emirati partners, with deep local knowledge and extensive government networks, ensure that your
+                  business complies with all legal requirements and benefits from streamlined government transactions.
+                  Whether you need a corporate sponsor, an individual sponsor, or a local service agent, we are here to
+                  make the process stress-free, allowing you to focus on growing your business in the UAE.
+                  Build strong government relations and enjoy seamless operations with Clarify Management Representative
+                  as your trusted local partner.
+
+                </p>
+                <a class="btn btn-light rounded-pill py-2 px-4" href="#service-corp-fam">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item bg-light rounded">
+            <div class="service-img">
+              <img src="img/service-6.jpg" class="img-fluid w-100 rounded-top" alt="" />
+            </div>
+            <div class="service-content text-center p-3">
+              <div class="service-content-inner">
+                <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-business-time fa-2x me-2"></i>
+                  Legal Translation & Attestation Services in the UAE
+                </a>
+                <p class="mb-4">
+                  We offer comprehensive legal translation and attestation services to ensure your documents meet all
+                  legal requirements in the UAE. Whether you need documents translated for business, legal proceedings,
+                  or personal matters, our expert translators provide accurate and certified translations in Arabic and
+                  other major languages.
+
+                  Our attestation services ensure that your documents are legally recognized by UAE authorities,
+                  offering you peace of mind and a hassle-free experience. From translating contracts, legal documents,
+                  and business agreements to attesting educational certificates, corporate documents, and personal
+                  papers, CmC is your trusted partner in navigating the UAE’s legal framework.
+
+                </p>
+                <a class="btn btn-light rounded-pill py-2 px-4" href="#service-corp-fam">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Services End -->
+
+  <!-- FAQ Start -->
+  <div class="container-fluid faq py-5">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center" id="service-gov-emp">
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+          <div class="pb-5">
+            <h4 class="text-primary">Clarify Consulting</h4>
+            <h1 class="display-4">
+              Government Relations and Employee & Staff PRO Services
+            </h1>
+            <div class="accordion bg-light rounded p-4" id="accordionExample">
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseTOne">
+                    Government Relations
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Regulatory Compliance: Adherence to all regulations,
+                        minimizing legal risks.
+                      </li>
+                      <li>
+                        Policy Advocacy: Representing your interests with
+                        government agencies.
+                      </li>
+                      <li>
+                        Government Liaison: Facilitating effective
+                        communication with government bodies.
+                      </li>
+                      <li>
+                        Licensing and Permits: Streamlining the process for
+                        timely approvals.
+                      </li>
+                      <li>
+                        Crisis Management: Strategic advice during regulatory
+                        crises.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Employee & Staff PRO Services
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Visa and Immigration Services: Managing visa
+                        applications and renewals.
+                      </li>
+                      <li>
+                        Employment Contracts: Preparing and reviewing legal
+                        employment contracts.
+                      </li>
+                      <li>
+                        Document Clearance: Handling attestation and clearance
+                        of documents.
+                      </li>
+                      <li>
+                        Labor Law Compliance: Ensuring your business meets
+                        labor law requirements.
+                      </li>
+                      <li>
+                        Employee Onboarding and Offboarding: Efficient
+                        onboarding and offboarding processes.
+                      </li>
+                      <li>
+                        Health Insurance and Benefits Administration: Managing
+                        employee health insurance and benefits.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Why Choose Us?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Expertise: Seasoned professionals with extensive
+                        knowledge.
+                      </li>
+                      <li>
+                        Customized Solutions: Tailored services for your
+                        business needs.
+                      </li>
+                      <li>
+                        Confidentiality: Ensuring the security of your
+                        business information.
+                      </li>
+                      <li>
+                        Comprehensive Support: Ongoing expert guidance and
+                        assistance.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="mailto:Support@Clarify.ae" class="btn btn-primary p-2" style="margin-top: 2rem"><i
+                class="fas fa-calendar"></i> Book Service</a>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+          <div class="faq-img RotateMoveRight rounded">
+            <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image" />
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 align-items-center" id="service-corp-fam">
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="faq-img RotateMoveLeft rounded">
+            <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image" />
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+          <div class="pb-5">
+            <h4 class="text-primary">Clarify Consulting</h4>
+            <h1 class="display-4">PRO Corporate and Family Visa Services</h1>
+            <div class="accordion bg-light rounded p-4" id="accordionExample">
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseTOne">
+                    PRO Corporate Visa Services
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Corporate Visa Applications: Handling the entire visa
+                        application process for your employees.
+                      </li>
+                      <li>
+                        Visa Renewals: Managing timely renewals to ensure
+                        uninterrupted legal status.
+                      </li>
+                      <li>
+                        Work Permits: Assisting with obtaining and renewing
+                        work permits.
+                      </li>
+                      <li>
+                        Immigration Compliance: Ensuring your business adheres
+                        to immigration laws and regulations.
+                      </li>
+                      <li>
+                        Employee Documentation: Managing all necessary
+                        documentation for employee visas.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    PRO Family Visa Services
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Family Visa Applications: Facilitating visa
+                        applications for family members of employees.
+                      </li>
+                      <li>
+                        Dependent Visas: Assisting with obtaining visas for
+                        spouses, children, and dependents.
+                      </li>
+                      <li>
+                        Residence Permits: Managing the application and
+                        renewal of residence permits for families.
+                      </li>
+                      <li>
+                        Legal Support: Providing guidance on legal
+                        requirements for family visas.
+                      </li>
+                      <li>
+                        Document Clearance: Handling the attestation and
+                        clearance of family documents.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Why Choose Us?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Expertise: Skilled professionals with extensive visa
+                        processing knowledge.
+                      </li>
+                      <li>
+                        Customized Solutions: Services tailored to meet your
+                        specific needs.
+                      </li>
+                      <li>
+                        Efficiency: Streamlined processes for quick and
+                        hassle-free visa applications.
+                      </li>
+                      <li>
+                        Confidentiality: Secure handling of all personal and
+                        business information.
+                      </li>
+                      <li>
+                        Comprehensive Support: Continuous support and guidance
+                        throughout the visa process
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="mailto:Support@Clarify.ae" class="btn btn-primary p-2" style="margin-top: 2rem"><i
+                class="fas fa-calendar"></i> Book Service</a>
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 align-items-center" id="service-admin-bus">
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+          <div class="pb-5">
+            <h4 class="text-primary">Clarify Consulting</h4>
+            <h1 class="display-4">
+              Administrative Support and Business Setup Services
+            </h1>
+            <div class="accordion bg-light rounded p-4" id="accordionExample">
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseTOne">
+                    Administrative Support Services
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Document Management: Efficient handling and
+                        organization of all business documents.
+                      </li>
+                      <li>
+                        Office Administration: Comprehensive administrative
+                        support to streamline daily operations.
+                      </li>
+                      <li>
+                        Secretarial Services: Professional secretarial support
+                        for meetings, correspondence, and documentation.
+                      </li>
+                      <li>
+                        HR Administration: Managing HR tasks including
+                        payroll, employee records, and compliance.
+                      </li>
+                      <li>
+                        Virtual Assistance: Remote administrative support
+                        tailored to your business needs.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    Business Setup Services
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Company Formation: Assisting with the entire process
+                        of company registration and formation.
+                      </li>
+                      <li>
+                        License Acquisition: Helping you obtain the necessary
+                        licenses and permits.
+                      </li>
+                      <li>
+                        Office Space Solutions: Finding and setting up the
+                        ideal office space for your business.
+                      </li>
+                      <li>
+                        Bank Account Setup: Facilitating the opening of
+                        business bank accounts.
+                      </li>
+                      <li>
+                        Legal Compliance: Ensuring your business meets all
+                        legal and regulatory requirements.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 mb-4">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Why Choose Us?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body my-2">
+                    <ul>
+                      <li>
+                        Expertise: Experienced professionals with in-depth
+                        knowledge of administrative and business setup
+                        processes.
+                      </li>
+                      <li>
+                        Customized Solutions: Services tailored to meet the
+                        unique needs of your business.
+                      </li>
+                      <li>
+                        Efficiency: Streamlined processes for quick and
+                        effective service delivery.
+                      </li>
+                      <li>
+                        Confidentiality: Secure handling of all business
+                        information.
+                      </li>
+                      <li>
+                        Comprehensive Support: Ongoing support and guidance
+                        through every step of the process.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="mailto:Support@Clarify.ae" class="btn btn-primary p-2" style="margin-top: 2rem"><i
+                class="fas fa-calendar"></i> Book Service</a>
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+          <div class="faq-img RotateMoveRight rounded">
+            <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image" />
+          </div>
+        </div>
+      </div>
+      <div class="row g-5 align-items-center" id="service-corp-fam">
+        <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="faq-img RotateMoveLeft rounded">
+            <img src="img/service-3.jpg" class="img-fluid rounded w-100" alt="Image" />
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
+          <div class="contact-item">
+            <div class="pb-5">
+              <h4 class="text-primary">Clarify Consulting</h4>
+              <h1 class="display-4 mb-4">Get In Touch</h1>
+              <p class="mb-0">
+                At Clarify Consulting, we offer a wide range of services to
+                support your business. Get in touch with us, and we will guide
+                you to the best possible solutions.
+              </p>
+            </div>
+
+            <div class="d-flex align-items-center mb-4">
+              <div class="bg-primary btn-lg-square rounded-circle p-2">
+                <i class="fa fa-phone-alt text-white"></i>
+              </div>
+              <div class="ms-4">
+                <h4>Phone</h4>
+                <p class="mb-0">
+                <ul>
+                  <li>+971 50 4917207 </li>
+                  <li> +971 52 5280086</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center mb-4">
+              <div class="bg-primary btn-lg-square rounded-circle p-2">
+                <i class="fa fa-envelope-open text-white"></i>
+              </div>
+              <div class="ms-4">
+                <h4>Email</h4>
+                <p class="mb-0">
+                <ul>
+                  <li>Support@Clarify.ae </li>
+                  <li>Faisal.Kaldi@Clarify.ae</li>
+                </ul>
+                </p>
+              </div>
+            </div>
+            <div class="pb-5">
+              <p class="mb-0">
+                Clarify Consulting: Helping your business thrive with expert
+                administrative support and business setup services.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAQ End -->
+
+  <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-md-6 col-lg-6 col-xl-4">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Explore</h4>
+            <a href="./index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+            <a href="./service.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+            <a href="./about.html"><i class="fas fa-angle-right me-2"></i> Bio</a>
+            <a href="./index.html#contact-section"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4">
+          <div class="footer-item d-flex flex-column">
+            <h4 class="text-white mb-4">Contact Info</h4>
+            <a href=""><i class="fa fa-map-marker-alt me-2"></i> Abu Dhabi, Musaffah
+              M9, UAE</a>
+            <a href=""><i class="fas fa-envelope me-2"></i> Support@clarify.ae</a>
+
+            <a href=""><i class="fas fa-phone me-2"></i> +971 52 52 80086</a>
+            <a href="" class="mb-3"><i class="fas fa-mobile me-2"></i> +971 50 491 7207</a>
+            <div class="d-flex align-items-center">
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-light btn-md-square me-2" href=""><i class="fab fa-instagram"></i></a>
+              <a class="btn btn-light btn-md-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xl-4">
+          <div class="footer-item-post d-flex flex-column">
+            <h4 class="text-white mb-4">Our Services</h4>
+            <div class="d-flex flex-column mb-3">
+              <p class="text-uppercase text-primary mb-2">
+                Clarify Consulting
+              </p>
+              <a href="#" class="text-body"><i class="fas fa-angle-right me-2"></i> Government Relations
+                and Employee & Staff PRO Services.</a>
+              <a href="#" class="text-body"><i class="fas fa-angle-right me-2"></i> PRO Corporate and
+                Family Visa Services.</a>
+            </div>
+
+            <div class="footer-btn text-start">
+              <a href="service.html" class="btn btn-light rounded-pill px-4">View All Services <i
+                  class="fa fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright py-4">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-md-0">
+          <span class="text-body"><a href="#" class="border-bottom text-primary"><i
+                class="fas fa-copyright text-light me-2"></i>The Clarify</a>, All right reserved.</span>
+        </div>
+        <div class="col-md-6 text-center text-md-end text-body">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Designed By
+          <a class="border-bottom text-primary" href="#">Nilesh Singh</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
