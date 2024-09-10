@@ -131,6 +131,15 @@
   .res-img{
     width: 25% !important;
   }
+  .h-img{
+    display: none ;
+  }
+  .img-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+   
+  }
+  .img-reverse img{ margin-bottom: 20px;}
 }
 /*** Topbar End ***/
 
